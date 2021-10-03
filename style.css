@@ -18,15 +18,12 @@ html, body{
 --white: #ffffff;
 --black: #000000;
 --light-gray: #636363;
---bg-color: #000000;
---blood-red: #7E0000;
+--bg-color: #ffffff;
 --dark-gray: #262626;
 
 /* -- gradient colors --*/
 
 --glass: linear-gradient(to top, #dfe9f3 0%, white 100%);
---premdark: linear-gradient(to right, #434343 0%, black 100%);
---polite: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
 }
 
 /* -- global classes -- */
@@ -67,7 +64,7 @@ button.btn{
 
 /*--navigation--*/
 .nav{
-  background: black;
+  background: white;
   position: relative;
   z-index: 999;
   padding: 0 2rem;
@@ -91,10 +88,10 @@ button.btn{
   position: relative;
   font-family: var(--Montserrat);
   font-size: 1.1rem;
-  color: var(--white);
+  color: var(--black);
 }
 .nav .nav-items .nav-link:hover{
-  background-color: var(--blood-red);
+  background-color: var(--dark-grey);
 }
 .nav .nav-items .nav-link:hover a{
   color: var(--light-gray);
@@ -106,7 +103,7 @@ button.btn{
   display: block;
   font-family: var(--PatuaOne);
   font-size: 2.5rem;
-  color: var(--white);
+  color: var(--black);
 }
 
 .nav .social{
@@ -116,26 +113,24 @@ button.btn{
 
 .nav .social i{
   padding: 0 .2rem;
-  color: var(--white);
+  color: var(--black);
   font-size: 1.8rem;
 }
 
 .nav .social i:hover{
   color: #e0001e;
 }
-/*--x-nav-x--*/
-
-/*----- main contents ----*/
 
 /*---- site title ----*/
 main .site-title{
-  background: url('https://i.postimg.cc/ZKvqgtbd/afterlight-11.jpg');
+  background: url('https://i.ibb.co/XxgWGhd/tcg-1.jpg');
   background-size: cover;
-  height: 110vh;
+  height: 45rem;
   justify-content: center;
 }
 
 main .site-title .site-background{
+  background: url('https://www.dropbox.com/s/kr1ptl3k429fy0r/tcg_1.JPG?dl=0');
   padding-top: 10rem;
   text-align: center;
   color: var(--white);
@@ -154,14 +149,14 @@ main .site-title .btn{
   margin-top: 3.5rem;
   display: flex;
   justify-content: center;
-  background: var(--polite);
-  color: var(--white);
+  background: var(--glass);
+  color: var(--dark-gray);
 }
 
 main .site-title .btn:hover{
-  background: var(--white);
+  background: var(--dark-gray);
   border: 2px solid var(--black);
-  color: var(--dark-gray);
+  color: var(--white);
 }
 /*--x-- site title --x--*/
 
