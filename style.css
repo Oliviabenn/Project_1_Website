@@ -1,0 +1,316 @@
+@import url('../css/fonts.css');
+
+html, body{
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #262626;
+}
+
+:root{
+/* -- font families -- */
+
+--PatuaOne: 'PatuaOne', serif;
+--Montserrat: 'Montserrat', serif;
+
+/* -- theme colors -- */
+
+--white: #ffffff;
+--black: #000000;
+--light-gray: #636363;
+--bg-color: #000000;
+--blood-red: #7E0000;
+--dark-gray: #262626;
+
+/* -- gradient colors --*/
+
+--glass: linear-gradient(to top, #dfe9f3 0%, white 100%);
+--premdark: linear-gradient(to right, #434343 0%, black 100%);
+--polite: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+}
+
+/* -- global classes -- */
+a{
+  text-decoration: none;
+  color: var(--text-gray);
+}
+
+.flex-row{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1{
+  font-family: var(--PatuaOne);
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+h3{
+  font-family: var(--Montserrat);
+  font-size: 1.1rem;
+  color: var(--white);
+}
+button.btn{
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--Montserrat);
+  cursor: pointer;
+}
+/* -x- global classes -x- */
+
+/*--navigation--*/
+.nav{
+  background: black;
+  position: relative;
+  z-index: 999;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+}
+
+.nav .nav-menu{
+  justify-content: space-between;
+}
+
+.nav .nav-items{
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-items .nav-link{
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family: var(--Montserrat);
+  font-size: 1.1rem;
+  color: var(--white);
+}
+.nav .nav-items .nav-link:hover{
+  background-color: var(--blood-red);
+}
+.nav .nav-items .nav-link:hover a{
+  color: var(--light-gray);
+}
+
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: var(--PatuaOne);
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.nav .social{
+  padding: 1.4rem 0;
+  z-index: 1000;
+}
+
+.nav .social i{
+  padding: 0 .2rem;
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.nav .social i:hover{
+  color: #e0001e;
+}
+/*--x-nav-x--*/
+
+/*----- main contents ----*/
+
+/*---- site title ----*/
+main .site-title{
+  background: url('https://i.postimg.cc/ZKvqgtbd/afterlight-11.jpg');
+  background-size: cover;
+  height: 110vh;
+  justify-content: center;
+}
+
+main .site-title .site-background{
+  padding-top: 10rem;
+  text-align: center;
+  color: var(--white);
+}
+
+main .site-title h1, h3{
+  margin: .3rem;
+  padding-top: 2.1rem;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 2px 2px #000000;
+}
+
+main .site-title .btn{
+  margin: auto;
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  background: var(--polite);
+  color: var(--white);
+}
+
+main .site-title .btn:hover{
+  background: var(--white);
+  border: 2px solid var(--black);
+  color: var(--dark-gray);
+}
+/*--x-- site title --x--*/
+
+main .header h1{
+  padding-top:2rem;
+  padding-bottom:3.5rem;
+  font-weight: lighter;
+  text-align: center;
+  font-family: var(--PatuaOne);
+}
+/* ---- img gallery ---*/
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  flex-basis: 100%;
+}
+
+/*--hover image ---*/
+.hover-animation{
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 10% auto 0;
+  color: #fff;
+}
+
+.hover-animation img{
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  transition: opacity .25s ease-in-out;
+}
+.hover-animation img.img-front1:hover{
+  opacity:0;
+  cursor: pointer;
+}
+/*--2--*/
+.hover-animation2{
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 10% auto 0;
+  color: #fff;
+}
+
+.hover-animation2 img{
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  transition: opacity .25s ease-in-out;
+}
+.hover-animation2 img.img-front1:hover{
+  opacity:0;
+  cursor: pointer;
+}
+figure{
+  display: table;
+}
+figcaption{
+  display: table-caption;
+  caption-side: top;
+  text-align: center;
+  font-family: var(--Montserrat);
+  color: var(--white);
+}
+/* 3 */
+.hover-animation3{
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 10% auto 0;
+  color: #fff;
+}
+
+.hover-animation3 img{
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  transition: opacity .25s ease-in-out;
+}
+.hover-animation3 img.img-front1:hover{
+  opacity:0;
+  cursor: pointer;
+}
+figure{
+  display: table;
+}
+figcaption{
+  display: table-caption;
+  caption-side: top;
+  text-align: center;
+  font-family: var(--Montserrat);
+  color: var(--white);
+}
+
+/* contact */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-family: var(--Montserrat);
+
+}
+
+input[type=submit] {
+  background-color: var(--blood-red);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--Montserrat);
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #262626;
+  padding: 50px;
+  font-family: var(--Montserrat);
+  color: white;
+}
+
+body .p{
+  font-family: var(--Montserrat);
+  color: white;
+}
+/*--x--- main contents --x--*/
+
+/*--footer--*/
+
+.sticky-footer{
+  position: sticky;
+  padding-right: 1.5rem;
+  padding-bottom: .5rem;
+  top: 100%;
+  z-index: 99;
+  color: #636363;
+  text-align: center;
+}
