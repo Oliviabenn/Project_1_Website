@@ -10,11 +10,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 
     <title>TCG | Home</title>
 
 <!-- page-icon --->
-<link rel="shortcut icon" href="https://i.postimg.cc/qqfYFtXt/bad-pony-vector-newlogo.png">
+<link rel="shortcut icon" href="#">
 
 </head>
 <!-- fade in animation -->
@@ -38,23 +40,23 @@
 
 <!--- Navigation ---->
 <nav class="nav">
-  <div class="nav-menu flex-row">
+  <nav class="nav-menu flex-row">
     <div class="nav-brand">
-    <a href="tcg.net">TCG</a>
+    <a href="index.html"><img src="https://i.ibb.co/hcskmyL/tcg-logo-tiny.png" alt="tcg-logo-tiny" border="0"></a>
   </div>
-  <div>
-    <ul class="nav-items">
+  <h1>TCG</h1>
+  <div class="element">
+    <ul class="nav-items" id="navList">
       <li class="nav-link"><a href="index.html">Home</a></li>
       <li class="nav-link"><a href="about.html">About</a></li>
       <li class="nav-link"><a href="gallery.html">Gallery</a></li>
       </ul>
+    
+      <a href="#" onclick="navData()" class="navIcon">
+        <i class="fas fa-bars"></i>
+      </a>
   </div>
-  <div>
-  <div class="social text">
-    <a href="https://www.instagram.com/kwantumkid/?hl=en"><i class="fab fa-instagram"></i></a>
-    </div>
-    </div>
-
+ 
 </nav>
 
 <!-- Main site -->
@@ -74,5 +76,8 @@
 <p>© 2021 TCG | Built by OB</p>
 </footer>
 
+
+
+<script src="./script.js"></script>
 </body>
 </html>
