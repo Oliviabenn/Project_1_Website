@@ -44,11 +44,11 @@
       <a href="index.html"><img src="https://i.ibb.co/hcskmyL/tcg-logo-tiny.png" alt="tcg-logo-tiny" border="0"></a>
 
   </div>
-  <h1><a href="index.html"><img src="./images/tgc_blue.png" alt="tcg-logo-tiny" border="0"></a></h1>
+    <h1>TGC</h1>
   <div class="element">
     <ul class="nav-items" id="navList">
       <li class="nav-link"><a href="index.html">Home</a></li>
-      <li class="nav-link"><a href="about.html">Info</a></li>
+      <li class="nav-link"><a href="about.html">About</a></li>
       <li class="nav-link"><a href="gallery.html">Gallery</a></li>
       <li class="nav-link"><a href="contact.html">Contact</a></li>
       <li class="nav-link"><a href="services.html">Services</a></li>
@@ -67,8 +67,32 @@
 <main>
   <section id="about">
               <h2>Contact</h2>
+              <div class="container">
+                <form action="action_page.php">
 
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                  <label for="inquire">Inquiry</label>
+                  <select id="inquire" name="inquire">
+                    <option value="photo">Photography</option>
+                    <option value="ads">Social Media Advertising</option>
+                    <option value="video">Video Production</option>
+                    <option value="courses">Course Creation</option>
+                  </select>
+
+                  <label for="message">Notes</label>
+                  <textarea id="subject" name="subject" placeholder="Please provide additional information here." style="height:200px"></textarea>
+
+                  <input type="submit" value="Submit">
+
+                </form>
+              </div>
           <div class="about-content">
+
 
 
 </section>
