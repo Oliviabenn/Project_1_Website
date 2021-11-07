@@ -1,7 +1,5 @@
 /*media query for mobile*/
 
-
-
 @media screen and (min-width: 750px) {
   #container {
     width: 50%;
@@ -40,7 +38,7 @@
 }
 
   #about {
-    /* width: 60%; */
+
   }
 
   aside {
@@ -94,10 +92,6 @@ table {
 
 html, body{
   box-sizing: border-box;
-  /*margin: 0%;
-  overflow-x: hidden;
-  background-color: #262626;
-  */
 }
 
 :root{
@@ -119,7 +113,7 @@ html, body{
 --glass: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
-/* -- global classes -- */
+/* -- styles -- */
 a{
   text-decoration: none;
   color: var(--text-gray);
@@ -199,6 +193,7 @@ button.btn{
 .nav .nav-menu{
   justify-content: space-around;
   align-items: center;
+  background-color: rgb(219, 219, 219);
 }
 
 .nav .nav-items{
@@ -215,10 +210,10 @@ button.btn{
   color: var(--black);
 }
 .nav .nav-items .nav-link:hover{
-  background-color: var(--dark-grey);
+  background-color: #ffffff;
 }
 .nav .nav-items .nav-link:hover a{
-  color: var(--light-gray);
+  color: #2b9cb4;
 }
 
 .nav .nav-brand a{
@@ -372,18 +367,6 @@ main .header h1{
   animation-name: fade;
   animation-duration: 1.5s;
 }
-/* animation
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-} */
-
-/*--footer--*/
 
 .sticky-footer{
   position: sticky;
@@ -394,12 +377,11 @@ main .header h1{
   color: #636363;
   text-align: center;
 }
-
+/*---*/
 
 @media screen and (max-width: 480px) {
   .element {
     overflow: hidden;
-    /* position: relative; */
   }
 
   .element #navLink {
