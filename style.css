@@ -114,6 +114,8 @@ html, body{
 /* -- gradient colors --*/
 
 --glass: linear-gradient(to top, #dfe9f3 0%, white 100%);
+--blue: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+--cloud: linear-gradient(to top, #1c92d2, #f2fcfe);
 }
 
 /* -- styles -- */
@@ -150,10 +152,15 @@ h2{
   font-size: 2.1rem;
   color: var(--black);
 }
+
 h3{
+  display: flex;
+  text-align: center;
+  text-decoration: italic;
+  padding-top: 5%
   font-family: var(--Montserrat);
-  font-size: 1.1rem;
-  color: var(--white);
+  font-size: 1.5rem;
+  color: black;
 }
 
 h4{
@@ -202,7 +209,7 @@ button.btn{
 .nav .nav-menu{
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(236, 236, 236);
 }
 
 .nav .nav-items{
@@ -255,40 +262,44 @@ button.btn{
 
 /*---- site title ----*/
 main .site-title{
-  background: url('https://i.ibb.co/KDQQmkd/IMG-5292.jpg');
+  background: var(--cloud);
   background-size: cover;
   height: 50rem;
   justify-content: center;
 }
 
 main .site-title .site-background{
-  background: url('https://www.dropbox.com/s/kr1ptl3k429fy0r/tcg_1.JPG?dl=0');
   padding-top: 10rem;
   text-align: center;
   color: var(--white);
 }
 
 main .site-title h1, h3{
-  margin: .3rem;
-  padding-top: 2.1rem;
-  text-align: center;
-  color: var(--white);
-  text-shadow: 2px 2px #000000;
+  margin: auto;
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  color: #140a00;
+  text-decoration: italic;
+  /*text-shadow: 2px 2px #000000;*/
 }
+
+/* button */
 
 main .site-title .btn{
   margin: auto;
   margin-top: 3.5rem;
   display: flex;
   justify-content: center;
-  background: var(--glass);
-  color: var(--dark-gray);
+  background: var(--blue);
+  color: white;
+  border: 2px solid #ffffff;
 }
 
 main .site-title .btn:hover{
-  background: var(--dark-gray);
+  background: #ffffff;
   border: 2px solid var(--black);
-  color: var(--white);
+  color: #7d7d7d;
 }
 /*--x-- site title --x--*/
 
@@ -424,7 +435,8 @@ main .header h1{
   }
 
   .about-content {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 }
 
