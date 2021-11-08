@@ -1,0 +1,616 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 50%;
+    height: 100%;
+    }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: rgb(5, 5, 5) url(../img/img01.jpg) repeat;
+    font-family: 'Krub', Arial, Helvetica, sans-serif;
+    font-size: .875rem;
+    color: rgb(91, 91, 91);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Charmonman', cursive;
+    font-weight: 200;
+    color: rgb(34, 34, 34);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.9em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p, ul, ol {
+    margin-top: 0;
+    line-height: 180%;
+}
+
+a {
+    color: rgb(94, 94, 94);
+}
+
+#wrapper {
+    background: rgb(255, 255, 255) url(../images/img05.jpg) repeat;
+}
+
+.container {
+    margin: 0px auto;
+}
+
+/* Header */
+
+#header-wrapper {
+    overflow: hidden;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+/* Logo */
+
+#logo {
+    float: left;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+#logo h1 {
+    line-height: 120px;
+    letter-spacing: -2px;
+    font-size: 3.8em;
+}
+
+#logo h1 a {
+    color: rgb(31, 31, 31);
+    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+}
+
+#logo p {
+    margin: 0;
+    padding: 0px 0 0 0px;
+    letter-spacing: -1px;
+    font: normal 20rem Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: rgb(142, 142, 142);
+}
+
+#logo p a {
+    color: rgb(142, 142, 142);
+}
+
+#logo a {
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Splash
+/
+#splash {
+    width: 960px;
+    height: 300px;
+    margin: 0px auto;
+}
+*/
+
+/* Search
+
+#search {
+    float: right;
+    width: 280px;
+    height: 60px;
+    padding: 20px 0px 0px 0px;
+}
+
+#search form {
+    height: 41px;
+    margin: 0;
+    padding: 10px 0 0 20px;
+}
+
+#search fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#search-text {
+    width: 170px;
+    padding: 6px 5px 2px 5px;
+    border: 1px solid rgb(231, 235, 237);
+    background: rgb(255, 255, 255);
+    text-transform: lowercase;
+    font: normal 11px Arial, Helvetica, sans-serif;
+    color: rgb(93, 120, 29);
+}
+
+#search-submit {
+    width: 50px;
+    height: 22px;
+    border: none;
+    background: rgb(185, 185, 185);
+    color: rgb(0, 0, 0);
+}
+*/
+
+/* Menu */
+
+#menu {
+    float: right;
+    width: 500px;
+    height: 90px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#menu ul {
+    float: right;
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu a {
+    display: block;
+    line-height: 100px;
+    margin-right: 1px;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(31, 31, 31) ;
+    border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+    background: url(../images/img01.jpg) repeat;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Page */
+
+#page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+
+/* Content */
+
+#content {
+    float: right;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+.post {
+    /* width: 0%; */
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(231, 235, 237);
+}
+
+.post .title {
+    padding: 7px 0px 0px 0px;
+    letter-spacing: -1px;
+}
+
+.post .title a {
+    border: none;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+.post .meta {
+    margin-bottom: 30px;
+    padding: 10px 0px 0px 0px;
+    text-align: left;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.post .meta .date {
+    float: left;
+}
+
+.post .meta .posted {
+    float: right;
+}
+
+.post .entry {
+    text-align: justify;
+}
+
+.entry img {
+    float: right;
+    width: 400px;
+    padding: 0 0 0 20px;
+}
+
+.links {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.more {
+    display: block;
+    float: left;
+    width: 88px;
+    padding: 5px 5px;
+    margin-right: 10px;
+    background: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+.comments {
+    display: block;
+    float: left;
+    width: 88px;
+    padding: 5px 5px;
+    background: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Sidebar */
+
+#sidebar {
+    float: left;
+    width: 270px;
+    margin: 0px;
+    padding: 30px 0px 0px 0px;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar li {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar li ul {
+    margin: 0px 0px;
+    padding-bottom: 30px;
+}
+
+#sidebar li li {
+    line-height: 40px;
+    border-bottom: 1px solid rgb(34, 34, 34);
+    margin: 0px 0px;
+    border-left: none;
+}
+
+#sidebar li li span {
+    display: block;
+    margin-top: -20px;
+    padding: 0;
+    font-size: 11px;
+    font-style: italic;
+}
+
+#sidebar li li a {
+    padding: 0px 0px 0px 20px;
+    background: url(../images/img04.jpg) no-repeat left 50%;
+}
+
+#sidebar h2 {
+    height: 38px;
+    padding: 20px 0px 0px 0px;
+    letter-spacing: -.5px;
+    font-size: 1.8em;
+    color: rgb(34, 34, 34);
+}
+
+#sidebar p {
+    margin: 0 0px;
+    padding: 0px 30px 20px 30px;
+    text-align: justify;
+}
+
+#sidebar a {
+    border: none;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+/*commenting this out because I don't see it displayed.*/
+
+/* Calendar
+
+
+#calendar_wrap {
+    padding: 20px;
+}
+
+#calendar table {
+    width: 100%;
+}
+
+#calendar tbody td {
+    text-align: center;
+}
+
+#calendar #next {
+    text-align: right;
+}
+*/
+
+/* Three Column Footer Content */
+
+#footer-content {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0px auto;
+    color: rgb(214, 226, 240);
+}
+
+#footer-content a {
+    color: rgb(146, 169, 182);
+}
+
+#footer-bg {
+    overflow: hidden;
+    padding: 30px 0px;
+    background: rgb(232, 232, 232);
+}
+
+#footer-content h2 {
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+    letter-spacing: -1px;
+    font-size: 26px;
+    color: rgb(38, 38, 38);
+}
+
+#footer-content #fbox1 {
+    float: left;
+    width: 300px;
+    margin-right: 50px;
+}
+
+#footer-content #fbox2 {
+    float: left;
+    width: 300px;
+}
+
+#footer-content #fbox3 {
+    float: right;
+    width: 300px;
+}
+
+#column1 {
+    float: left;
+    width: 290px;
+    margin-right: 30px;
+}
+
+#column2 {
+    float: left;
+    width: 280px;
+}
+
+#column3 {
+    float: right;
+    width: 260px;
+}
+
+/* Footer */
+
+#footer {
+    height: 140px;
+    margin: 0 auto;
+    padding: 50px 0 15px 0;
+    font-family: 'Abel', sans-serif;
+}
+
+#footer p {
+    margin: 0;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(94, 94, 94);
+}
+
+#footer a {
+    color: rgb(94, 94, 94);
+}
+/*
+#marketing {
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 20px 0px 10px 0px;
+    border-top: 1px solid rgb(231, 235, 237);
+    border-bottom: 1px solid rgb(231, 235, 237);
+}
+#marketing .text1 {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: -2px;
+    text-transform: lowercase;
+    font-size: 34px;
+    color: rgb(52, 94, 155);
+}
+
+#marketing .text2 {
+    float: right;
+}
+
+#marketing .text2 a {
+    display: block;
+    width: 252px;
+    height: 38px;
+    padding: 15px 0px 0px 0px;
+    background: url(../images/img07.jpg) no-repeat left top;
+    letter-spacing: -2px;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+}
+*/
+
+#banner {
+    margin: 0px auto;
+    background: url(../images/img03.png) no-repeat left bottom;
+}
+
+#banner .content {
+  width: 100%;
+  height: 20rem;
+}
+
+
+.list-style1 {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.list-style1 a {
+    color: rgb(127, 127, 127);
+}
+
+@media screen and (max-width: 749px){
+    #menu a {
+        display: block;
+        line-height: inherit;
+        margin-right: 1px;
+        margin-bottom: 20px;
+        /* padding: 0px 20px 0px 20px; */
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        font-size: inherit;
+        font-weight: 300;
+        color: rgb(31, 31, 31) ;
+        border: none;
+    }
+    #menu ul, #menu li  {
+        float: inherit;
+        padding: 20px 0px 0px 0px;
+        list-style: none;
+        line-height: normal;
+    }
+     #logo a {
+        border: none;
+        background: none;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    #logo h1{
+        font-size: 40px;
+        font-style: italic;
+        font-weight: bolder;
+    }
+    .post h2{
+        font-size: 30px
+    }
+    /* .entry img {
+        float: right;
+        width: 500px;
+        padding: 0 0 0 20px;
+    } */
+
+    /* .post {
+        overflow: hidden;
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgb(231, 235, 237);
+    }
+     */
+    .post .title {
+        letter-spacing: -1px;
+    }
+
+    .post .title a {
+        border: none;
+        text-decoration: none;
+        color: rgb(34, 34, 34);
+        font-size: 40px;
+    }
+
+    .post .meta {
+        margin-bottom: 30px;
+        text-align: left;
+        font-family: 'Abel', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .post .meta .date {
+        float: left;
+    }
+
+    .post .meta .posted {
+        float: right;
+    }
+
+    .content img {
+        width: 100%;
+    }
+
+    #header, #menu {
+        height: inherit;
+    }
+
+    #logo, #menu {
+        float: inherit;
+        width: inherit;
+    }
+
+#banner .content {
+    height: inherit;
+  }
+}
