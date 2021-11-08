@@ -27,6 +27,10 @@ h1, h2, h3 {
     color: rgb(34, 34, 34);
 }
 
+.site-title h1 {
+    line-height: 2ch;
+}
+
 h1 {
     font-size: 2em;
 }
